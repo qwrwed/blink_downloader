@@ -1,0 +1,6 @@
+blinkpy~=0.22.6
+ConfigArgParse==1.7
+dateutils~=0.6.12
+tqdm~=4.66.2
+
+git+https://github.com/qwrwed/utils-python.git
