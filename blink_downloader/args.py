@@ -21,6 +21,7 @@ def get_args():
         "-c",
         "--app-config-path",
         is_config_file=True,
+        default="config/app.yaml",
         help="Path to app config file",
         type=Path,
     )
