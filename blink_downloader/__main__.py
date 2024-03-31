@@ -148,7 +148,7 @@ async def main(args: ArgsNamespace):
     auth = Auth(await json_load(args.credentials_file))
     blink.auth = auth
 
-    LOGGER.info("starting...")
+    LOGGER.info(f"starting; will download to '{args.output_dir}'...")
     async with blink_session(blink):
         video_data_raw: list[dict] = await blink.get_videos_metadata(
             since=args.since, stop=args.pages
