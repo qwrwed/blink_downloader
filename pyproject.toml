@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools"]
+
+[tool.setuptools]
+packages = []
+
+[project]
+name="blink-downloader"
+version="0.0.0"
+dependencies = [
+    "blinkpy ~= 0.22.6",
+    "ConfigArgParse == 1.7",
+    "dateutils ~= 0.6.12",
+    "filedate ~= 3.0",
+    "tqdm ~= 4.66.2",
+    "utils-python@git+https://github.com/qwrwed/utils-python"
+]
+
+[tool.isort]
+profile = "black"
